@@ -1,4 +1,3 @@
-use std::fmt::Display;
 use std::fs;
 
 pub fn get_input(filename: &str) -> String {
