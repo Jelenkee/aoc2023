@@ -1,6 +1,7 @@
 use std::env;
 
 mod day01;
+mod day02;
 mod utils;
 fn main() {
     let day = env::args().nth(1).expect("missing argument");
@@ -8,6 +9,10 @@ fn main() {
         "01" => {
             println!("1: {}", day01::solve1());
             println!("2: {}", day01::solve2());
+        }
+        "02" => {
+            println!("1: {}", day02::solve1());
+            println!("2: {}", day02::solve2());
         }
         _ => {
             panic!("wrong day {day}")

@@ -1,6 +1,5 @@
-use std::fmt::Display;
 use crate::utils::parse_to_lines;
-
+use std::fmt::Display;
 
 const WORDS: [&str; 9] = [
     "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",

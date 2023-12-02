@@ -1,7 +1,10 @@
 use std::fs;
 
 pub fn get_input(filename: &str) -> String {
-    fs::read_to_string(format!("./input/{filename}")).unwrap()
+    fs::read_to_string(format!("./input/{filename}"))
+        .unwrap()
+        .trim()
+        .to_string()
 }
 pub fn parse_to_lines(filename: &str) -> Vec<String> {
     get_input(filename)
