@@ -23,3 +23,11 @@ pub fn to_grid(lines: Vec<String>) -> Grid<char> {
     }
     grid
 }
+
+pub fn line_to_numbers(s: &str) -> Vec<u32> {
+    s.split(' ')
+        .map(|s| s.trim())
+        .filter(|s| !s.is_empty())
+        .map(|s| s.parse().unwrap())
+        .collect()
+}
