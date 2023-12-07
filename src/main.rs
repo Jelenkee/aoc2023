@@ -6,6 +6,7 @@ mod day03;
 mod day04;
 mod day05;
 mod day06;
+mod day07;
 mod utils;
 fn main() {
     let day = env::args().nth(1).expect("missing argument");
@@ -33,6 +34,10 @@ fn main() {
         "06" => {
             println!("1: {}", day06::solve1());
             println!("2: {}", day06::solve2());
+        }
+        "07" => {
+            println!("1: {}", day07::solve1());
+            println!("2: {}", day07::solve2());
         }
         _ => {
             panic!("wrong day {day}")
